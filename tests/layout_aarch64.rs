@@ -131,6 +131,10 @@ fn ntexapi() {
     assert_eq!(align_of::<SYSTEM_INTERRUPT_INFORMATION>(), 4);
     assert_eq!(size_of::<SYSTEM_DPC_BEHAVIOR_INFORMATION>(), 20);
     assert_eq!(align_of::<SYSTEM_DPC_BEHAVIOR_INFORMATION>(), 4);
+    assert_eq!(size_of::<SYSTEM_DPC_WATCHDOG_INFORMATION>(), 20);
+    assert_eq!(align_of::<SYSTEM_DPC_WATCHDOG_INFORMATION>(), 4);
+    assert_eq!(size_of::<SYSTEM_DPC_WATCHDOG_INFORMATION2>(), 32);
+    assert_eq!(align_of::<SYSTEM_DPC_WATCHDOG_INFORMATION2>(), 4);
     assert_eq!(size_of::<SYSTEM_QUERY_TIME_ADJUST_INFORMATION>(), 12);
     assert_eq!(align_of::<SYSTEM_QUERY_TIME_ADJUST_INFORMATION>(), 4);
     assert_eq!(size_of::<SYSTEM_QUERY_TIME_ADJUST_INFORMATION_PRECISE>(), 24);
@@ -327,6 +331,8 @@ fn ntexapi() {
     assert_eq!(align_of::<SYSTEM_ELAM_CERTIFICATE_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_PROCESSOR_FEATURES_INFORMATION>(), 32);
     assert_eq!(align_of::<SYSTEM_PROCESSOR_FEATURES_INFORMATION>(), 8);
+    assert_eq!(size_of::<SYSTEM_PROCESSOR_FEATURES_BITMAP_INFORMATION>(), 16);
+    assert_eq!(align_of::<SYSTEM_PROCESSOR_FEATURES_BITMAP_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_MANUFACTURING_INFORMATION>(), 24);
     assert_eq!(align_of::<SYSTEM_MANUFACTURING_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_ENERGY_ESTIMATION_CONFIG_INFORMATION>(), 1);
@@ -347,6 +353,8 @@ fn ntexapi() {
     assert_eq!(align_of::<SYSTEM_ISOLATED_USER_MODE_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_SINGLE_MODULE_INFORMATION>(), 328);
     assert_eq!(align_of::<SYSTEM_SINGLE_MODULE_INFORMATION>(), 8);
+    assert_eq!(size_of::<SYSTEM_TRUSTED_APPS_RUNTIME_INFORMATION>(), 16);
+    assert_eq!(align_of::<SYSTEM_TRUSTED_APPS_RUNTIME_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_INTERRUPT_CPU_SET_INFORMATION>(), 16);
     assert_eq!(align_of::<SYSTEM_INTERRUPT_CPU_SET_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_SECUREBOOT_POLICY_FULL_INFORMATION>(), 32);
@@ -359,6 +367,8 @@ fn ntexapi() {
     assert_eq!(align_of::<SYSTEM_SECURE_KERNEL_HYPERGUARD_PROFILE_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_SECUREBOOT_PLATFORM_MANIFEST_INFORMATION>(), 8);
     assert_eq!(align_of::<SYSTEM_SECUREBOOT_PLATFORM_MANIFEST_INFORMATION>(), 4);
+    assert_eq!(size_of::<SYSTEM_SECURITY_MODEL_INFORMATION>(), 4);
+    assert_eq!(align_of::<SYSTEM_SECURITY_MODEL_INFORMATION>(), 4);
     assert_eq!(size_of::<SYSTEM_MEMORY_USAGE_INFORMATION>(), 56);
     assert_eq!(align_of::<SYSTEM_MEMORY_USAGE_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_CODEINTEGRITY_CERTIFICATE_INFORMATION>(), 16);
@@ -373,6 +383,8 @@ fn ntexapi() {
     assert_eq!(align_of::<SYSTEM_CODEINTEGRITY_UNLOCK_INFORMATION>(), 4);
     assert_eq!(size_of::<SYSTEM_FLUSH_INFORMATION>(), 32);
     assert_eq!(align_of::<SYSTEM_FLUSH_INFORMATION>(), 8);
+    assert_eq!(size_of::<SYSTEM_POOL_ZEROING_INFORMATION>(), 1);
+    assert_eq!(align_of::<SYSTEM_POOL_ZEROING_INFORMATION>(), 1);
     assert_eq!(size_of::<SYSTEM_WRITE_CONSTRAINT_INFORMATION>(), 8);
     assert_eq!(align_of::<SYSTEM_WRITE_CONSTRAINT_INFORMATION>(), 4);
     assert_eq!(size_of::<SYSTEM_KERNEL_VA_SHADOW_INFORMATION>(), 4);
@@ -383,6 +395,8 @@ fn ntexapi() {
     assert_eq!(align_of::<SYSTEM_HYPERVISOR_SHARED_PAGE_INFORMATION>(), 8);
     assert_eq!(size_of::<SYSTEM_SPECULATION_CONTROL_INFORMATION>(), 4);
     assert_eq!(align_of::<SYSTEM_SPECULATION_CONTROL_INFORMATION>(), 4);
+    assert_eq!(size_of::<SYSTEM_SECURE_SPECULATION_CONTROL_INFORMATION>(), 8);
+    assert_eq!(align_of::<SYSTEM_SECURE_SPECULATION_CONTROL_INFORMATION>(), 4);
     assert_eq!(size_of::<SYSTEM_DMA_GUARD_POLICY_INFORMATION>(), 1);
     assert_eq!(align_of::<SYSTEM_DMA_GUARD_POLICY_INFORMATION>(), 1);
     assert_eq!(size_of::<SYSTEM_ENCLAVE_LAUNCH_CONTROL_INFORMATION>(), 32);
